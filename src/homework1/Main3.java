@@ -1,11 +1,12 @@
 package homework1;
+import java.util.Scanner;
 public class Main3 {
     public static void main(String[] args){
-        //таблиця множення на 5
-        int b=0;
-        for (int a =5; a <= 50; a+=5){
-            b++;
-            System.out.println("5 * "+b+"=" + a );
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("ведіть число");
+        int a = scanner.nextInt();
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(a+"* "+ i +" ="+ a*i);
         }
     }
 }

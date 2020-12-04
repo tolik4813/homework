@@ -3,11 +3,11 @@ import java.util.Scanner;
 public class Main8 {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
-        int size;
-        int size1 = 0;
-        int size2 = 0;
-        int n = 0;
-        int q = 0;
+        int size;//розмір основного масиву
+        int size1 = 0;//розмір відємного масиву
+        int size2 = 0;// розмір додатнього масиву
+        int minus = 0;//порядковий номер елементу у відемному масиві
+        int plus = 0;// порядковий номер елементу у додатьньому масиві
         System.out.println("enter size");
         size = scanner.nextInt();
         int[] aray = new int[size];
@@ -24,15 +24,15 @@ public class Main8 {
         int[] arayMinys = new int[size1];
         for (int i = 0; i < aray.length; i++) {
             if (aray[i]<0){
-                arayMinys[n] = aray[i];
-                n++;
+                arayMinys[minus] = aray[i];
+                minus++;
             }
         }
         int[] arayPlus = new int[size2];
         for (int i = 0; i < aray.length; i++) {
             if (aray[i]>0){
-                arayPlus[q] = aray[i];
-                q++;
+                arayPlus[plus] = aray[i];
+                plus++;
             }
         }
         System.out.println("Мінус:");

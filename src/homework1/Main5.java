@@ -9,8 +9,7 @@ public class Main5 {
         System.out.println("8 * 9 = ");
         System.out.println("Ведіть відповідь");
         Scanner scanner = new Scanner(System.in);
-        int number;
-        while ((number = scanner.nextInt())<71 || number >73 ){
+        while ( scanner.nextInt() != 72){
             System.out.println("Спробуйте ще раз");
         }
         System.out.println("Вірно");
