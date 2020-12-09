@@ -23,12 +23,17 @@ public class Circle {
     public void setDiameter(double diameter) {
         this.diameter = diameter;
     }
-    public  void space1(){
+    public  double space(){
         double space = Math.PI*diameter;
         System.out.println("Площа кола =  " + space);
+        return space;
     }
-    public void circuit(){
+    public double circuit(){
         double circuit =Math.PI * 2* radius;
         System.out.println("Довжина кола = " + circuit);
+        return circuit;
     }
+   // public int perimeter () {
+     //   return 2*(a+b);
+    //}
 }

@@ -17,7 +17,7 @@ public class Main1 {
         System.out.println("Ведіть радіус");
         circle1.setRadius(scanner.nextDouble());
         circle1.setDiameter(circle1.getRadius()*2);
-        circle1.space1();
+        circle1.space();
         circle1.circuit();
     }
 }
