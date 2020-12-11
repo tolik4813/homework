@@ -4,6 +4,10 @@ public class Rectangle {
     private int length;
     private int width;
 
+    Rectangle() {
+
+    }
+
     public int getLength() {
         return length;
     }

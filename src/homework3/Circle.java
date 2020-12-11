@@ -3,6 +3,9 @@ package homework3;
 public class Circle {
     private double  radius;
     private double diameter;
+    Circle(){
+
+    }
     Circle(double radius,double diameter){
         this.radius=radius;
         this.diameter=diameter;
